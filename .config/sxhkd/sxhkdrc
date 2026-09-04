@@ -1,0 +1,11 @@
+Menu + h
+    xdotool key Left
+
+Menu + j
+    xdotool key Down
+
+Menu + k
+    xdotool key Up
+
+Menu + l
+    xdotool key Right

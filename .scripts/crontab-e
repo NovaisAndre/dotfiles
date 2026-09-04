@@ -1,0 +1,12 @@
+# Reference crontab. Install with:  crontab crontab-e
+# (setup/09_final.sh generates this automatically using your real $HOME.)
+
+# Hourly repo sync (commit -> pull --rebase -> push)
+0 * * * * /home/USER/personal/projects/dotfiles/.scripts/git-sync.sh /home/USER/personal/projects/dotfiles >>/home/USER/.cache/git-sync.dotfiles.log 2>&1
+0 * * * * /home/USER/personal/projects/dotfiles/.scripts/git-sync.sh /home/USER/personal/projects/dwm >>/home/USER/.cache/git-sync.dwm.log 2>&1
+5 * * * * /home/USER/personal/projects/dotfiles/.scripts/git-sync.sh /home/USER/personal/projects/notes >>/home/USER/.cache/git-sync.notes.log 2>&1
+1 * * * * /home/USER/personal/projects/dotfiles/.scripts/git-sync.sh /home/USER/personal/projects/dotfiles-personal >>/home/USER/.cache/git-sync.personal.log 2>&1
+
+# Redshift (night light)
+0 18 * * * DISPLAY=:0 redshift -O 4200
+0 7  * * * DISPLAY=:0 redshift -x

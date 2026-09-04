@@ -1,0 +1,25 @@
+clear lock 
+
+keycode 10 = exclam       1
+keycode 11 = braceleft    2
+keycode 12 = bracketleft  3
+keycode 13 = parenleft    4
+keycode 14 = equal        5
+keycode 15 = ampersand    6
+keycode 16 = parenright   7
+keycode 17 = bracketright 8
+keycode 18 = braceright   9
+keycode 19 = asterisk     0
+keycode 21 = percent plus
+keycode 35 = dollar numbersign 
+keycode 51 = dead_tilde dead_circumflex
+keycode 61 = slash question
+keycode 135 = KP_End NoSymbol NoSymbol KP_Home KP_Home 
+! keycode 47 = quotedbl ccedilla
+keycode 47 = semicolon colon
+keycode 48 = quotedbl ccedilla
+keycode 49 = apostrophe at
+
+keycode 66 = Super_L
+add mod4 = Super_L
+

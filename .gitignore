@@ -1,0 +1,10 @@
+.last_ip
+.zsh_history
+zsh_history_arch
+.tmux/plugins/
+.dwm/*/*.o
+.dwm/*/dwmblocks
+.scripts/macros/
+*__pycache__/
+*.py[cod]
+ansible/

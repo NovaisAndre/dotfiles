@@ -24,4 +24,10 @@ done
 
 stow --target="$HOME" --verbose=1 .
 
+# ~/dotfiles -> repo: keeps scripts/configs that reference ~/dotfiles/... working
+if [[ ! -e "$HOME/dotfiles" && ! -L "$HOME/dotfiles" ]]; then
+  ln -s "$REPO" "$HOME/dotfiles"
+  echo "linked ~/dotfiles -> $REPO"
+fi
+
 echo "Dotfiles stowed into $HOME."
